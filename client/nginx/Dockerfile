@@ -3,7 +3,7 @@ WORKDIR '/app'
 COPY ./package.json ./
 RUN npm install
 COPY . .
-CMD ["yarn", "build"]
+CMD ["npm", "build"]
 
 FROM nginx
 EXPOSE 3000
